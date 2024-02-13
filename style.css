@@ -6,7 +6,7 @@ body {
 
 .intro {
     display: flex;
-    background-image: url(grafulin/picture/wp2.jpg);
+    background-image: url(picture/wp2.jpg);
     background-size: cover;
     background-position: center;
     min-height: 320px;
@@ -61,7 +61,7 @@ body {
 }
 
 .lbutton {
-    background-image: url(grafulin/picture/logot.png);
+    background-image: url(picture/logot.png);
     background-size: cover;
     background-position: center;
     width: 64px;
@@ -73,7 +73,7 @@ body {
 
     display: none;
     float: right;
-    background: url(grafulin/picture/hamburger.png);
+    background: url(picture/hamburger.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +86,7 @@ body {
 }
 
 .navbar [aria-expanded="true"] {
-    background: url(grafulin/picture/close.png);
+    background: url(picture/close.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,7 +94,7 @@ body {
 
 .header {
     display: flex;
-    background-image: url(grafulin/picture/title.png);
+    background-image: url(picture/title.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -161,6 +161,7 @@ body {
 
 .header {
     display: flex;
+    position: fixed;
 
 }
 
