@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-self: center;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 
