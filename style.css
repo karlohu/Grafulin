@@ -58,7 +58,8 @@ body {
 
 .nav-list li a:hover {
     color: orangered;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    transition: 500ms ease-out;
 }
 
 .lbutton {
@@ -93,6 +94,13 @@ body {
     background-position: center;
 }
 
+.headerw {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     display: flex;
     background-image: url(picture/title.png);
@@ -100,12 +108,48 @@ body {
     background-position: center;
     background-size: contain;
     aspect-ratio: 3/1;
-    height: 30svh;
-    max-width: 90svw;
-    max-height: 500px;
+    width: 90svw;
+    max-height: 30svh;
     margin: 0;
-    top: 185px;
+    top: 29%;
+    justify-content: center;
+}
 
+.location {
+    font-family: 'architectures daughter';
+    font-size: 1.1rem;
+    display: block;
+    position: absolute;
+    height: fit-content;
+    bottom: -60px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    padding: 1rem 0rem;
+    background-color: transparent;
+    border: none;
+}
+
+.location a {
+padding: 1rem 1rem;
+border-style: ridge;
+border-color: white;
+border-width: 2px;
+border-radius: 20px;
+color: white;
+text-decoration: none;
+
+}
+
+.location a:hover{
+    background-color: white;
+    color: orangered;
+    border-style: ridge;
+    border-color:transparent;
+    border-width: 2px;
+    border-radius: 20px;
+    transition: 700ms ease-out;
 }
 
 
