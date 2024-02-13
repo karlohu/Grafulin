@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', sans-serif;
+}
+
+.intro {
+    display: flex;
+    background-image: url(grafulin/picture/wp2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    height: 80svh;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+}
+
+
+.navbar {
+    display: grid;
+    overflow: hidden;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 0;
+    max-width: 1100px;
+    width: 90svw;
+    height: fit-content;
+    margin-top: 5svh;
+    margin-bottom: 5svh;
+
+
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    float: right;
+    margin: 0;
+
+}
+
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    justify-content: center;
+    padding: 1rem 1rem;
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+    margin: 0;
+}
+
+.nav-list li a:hover {
+    color: orangered;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lbutton {
+    background-image: url(grafulin/picture/logot.png);
+    background-size: cover;
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.menu {
+
+    display: none;
+    float: right;
+    background: url(grafulin/picture/hamburger.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: none;
+    cursor: pointer;
+    z-index: 9999;
+    height: 64px;
+    width: 64px;
+}
+
+.navbar [aria-expanded="true"] {
+    background: url(grafulin/picture/close.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    background-image: url(grafulin/picture/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    aspect-ratio: 3/1;
+    height: 30svh;
+    max-width: 90svw;
+    max-height: 500px;
+    margin: 0;
+    top: 185px;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .navbar {
+        border-style: none;
+    }
+
+
+
+    .nav-list {
+        display: flex;
+        z-index: 1000;
+        flex-direction: row;
+        text-decoration: none;
+        width: 90svw;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(1px);
+        border: none;
+        border-radius: 20px;
+        visibility: hidden;
+        transform: translateY(-120%);
+        transition: transform 350ms ease-out;
+    }
+
+    .navbar [data-visible="true"] {
+        transform: translateY(0%);
+        visibility: visible;
+        z-index: 9999;
+    }
+
+
+    .nav-list li a {
+
+        font-size: clamp(5px, 4.2svw, 20px);
+        display: inline-block;
+        padding: 2.7svh 2svw;
+        margin: 0;
+    }
+
+    .menu {
+        z-index: 9999;
+        display: flex;
+        right: 5svw;
+    }
+}
+
+.header {
+    display: flex;
+
+}
+
+
+
+/*.mirror {
+    visibility: visible; 
+    z-index: -100; 
+    position: fixed; 
+    top: 0px; left: 0px; 
+    overflow: hidden; 
+    transform: translate3d(0px, 0px, 0px); 
+    height: 800px; 
+    width: 1436px; 
+}
